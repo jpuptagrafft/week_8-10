@@ -1,0 +1,20 @@
+<div id="footer">
+    <div>
+        <div class="connect">
+            {% if site.facebook_username %}
+            <a href="http://freewebsitetemplates.com/go/facebook/" class="facebook">facebook</a>
+            {% endif %}
+            {% if site.twitter_username %}
+            <a href="http://freewebsitetemplates.com/go/twitter/" class="twitter">twitter</a>
+            {% endif %}
+            {% if site.googleplus_username %}
+            <a href="http://freewebsitetemplates.com/go/googleplus/" class="googleplus">googleplus</a>
+            {% endif %}
+            {% if site.pinterest_username %}
+            <a href="http://pinterest.com/fwtemplates/" class="pinterest">pinterest</a>
+            {% endif %}
+        </div>
+        <p>&copy; {{ "now" | date: "%Y" }} 
+            {{ site.author }}. All Rights Reserved.</p>
+    </div>
+</div>

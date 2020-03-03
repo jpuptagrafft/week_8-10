@@ -1,0 +1,13 @@
+<!doctype html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+    {% include head.html %}
+<body>
+    {% include header.html %}
+    {{ content }}
+    {% if page.url == "/index.html" %}
+        {% include home_footer.html %}
+    {% else %}
+        {% include footer.html %}
+    {% endif %}
+</body>
