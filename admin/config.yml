@@ -1,5 +1,15 @@
+#backend:
+#  name: github
+#  repo: jpuptagrafft/week_8-10
+#  branch: master # Branch to update (optional; defaults to master)
+#  media_folder: "images"
 backend:
-  name: github
-  repo: jpuptagrafft/week_8-10
+  name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
-  media_folder: "images"
+media_folder: 'assets/uploads'
+collections:
+  - name: 'blog'
+    label: 'Blog'
+    folder: '_posts/'
+    fields:
+      - { name: Title }
