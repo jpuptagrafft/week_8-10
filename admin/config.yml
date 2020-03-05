@@ -1,0 +1,5 @@
+backend:
+  name: github
+  repo: jpuptagrafft/week_8-10
+  branch: master # Branch to update (optional; defaults to master)
+  media_folder: "images"
