@@ -1,9 +1,9 @@
 backend:
-  name: git-gateway
+  name: github
   repo: jpuptagrafft/week_8-10
 media_folder: 'images'
 collections:
-  - name: 'blog'
+    name: 'blog'
     label: 'Blog'
     folder: '_posts'
     create: true
