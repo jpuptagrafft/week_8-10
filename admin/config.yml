@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: git-gateway
   repo: jpuptagrafft/week_8-10
 media_folder: 'images'
 collections:
