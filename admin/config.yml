@@ -4,10 +4,10 @@ backend:
 media_folder: 'images'
 collections:
   - name: 'blog'
-  label: 'Blog'
-  folder: '_posts'
-  create: true
-  fields:
-    - { name: "title", widget: "string" }
-    - { name: "date", widget: "datetime"}
-    - { name: "body", widget: "markdown" }
+    label: 'Blog'
+    folder: '_posts'
+    create: true
+    fields:
+      - { name: "title", widget: "string" }
+      - { name: "date", widget: "datetime"}
+      - { name: "body", widget: "markdown" }
