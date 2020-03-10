@@ -13,4 +13,5 @@ collections:
     folder: '_posts'
     create: true
     fields:
-      - { name: Title }
+      - { name: "title", widget: "string" }
+      - { name: "body", widget: "markdown" }
