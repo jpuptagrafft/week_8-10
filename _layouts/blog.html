@@ -1,0 +1,43 @@
+---
+layout: default
+---
+	<div id="page">
+		<div id="body">
+			<div class="header">
+				<div>
+					<h1>Blog</h1>
+				</div>
+			</div>
+			<div class="blog">
+				<div class="featured">
+					<ul>
+                        {% for post in site.posts %}
+						<li>
+                            {% if post.background %}
+                            <img src={{ post.background }} alt="">
+                            {% else %}
+                            <img src="{{site.url}}/images/strwberry-delights.jpg" alt="">
+                            {% endif %}
+							<div>
+								<h1>{{ post.title }}</h1>
+								<span>By {% if post.author %}{{ post.author }}{% else %}{{ site.author }}{% endif %} on {{ post.date | date: '%B %d, %Y'}}</span>
+								<p>{{ post.excerpt | strip_html | truncatewords: 15 }}</p>
+								<a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}"" class="more">Read More</a>
+							</div>
+                        </li>
+                        {% endfor %}
+					</ul>
+					<a href="blog.html" class="load">Load More</a>
+				</div>
+				<div class="sidebar">
+					<h1>Recent Posts</h1>
+					<img src="images/on-diet.png" alt="">
+					<h2>ON THE DIET</h2>
+					<span>By Admin on November 28, 2023</span>
+					<p>You can replace all this text with your own text. You can remove any link to our website from this website template.</p>
+					<a href="singlepost.html" class="more">Read More</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</html>
