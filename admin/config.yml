@@ -3,11 +3,11 @@ backend:
   repo: jpuptagrafft/week_8-10
 media_folder: 'images'
 collections:
-    name: 'blog'
-    label: 'Blog'
-    folder: '_posts'
-    create: true
-    fields:
+  - name: 'blog'
+  - label: 'Blog'
+  - folder: '_posts'
+  - create: true
+  - fields:
       - { name: "title", widget: "string" }
       - { name: "date", widget: "datetime"}
       - { name: "body", widget: "markdown" }
