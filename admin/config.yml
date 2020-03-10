@@ -11,6 +11,6 @@ collections:
   - name: 'blog'
     label: 'Blog'
     folder: '_posts'
-    create: 'true'
+    create: true
     fields:
       - { name: Title }
