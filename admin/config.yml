@@ -7,7 +7,9 @@ collections:
     label: 'Blog'
     folder: '_posts'
     create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
+      - { name: "layout", widget: "hidden", default: "post"}
       - { name: "title", widget: "string" }
       - { name: "date", widget: "datetime"}
       - { name: "body", widget: "markdown" }
